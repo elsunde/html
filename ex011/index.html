@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios disposetivos  diferentes ou simplesmente aumente e diminua o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width:800px )" srcset="imagens/computer.jpg" type="image/jpg">
+        <source media="(max-width:1500px )" srcset="imagens/computer-mais.jpg" type="image/jpg">
+        <source media="(max-width:2000px )" srcset="imagens/computer-pequena.jpg" type="image/jpg">
+        <source media="(max-width:5000px )" srcset="imagens/computer-media.jpg" type="image/jpg">
+        <img src="imagens/computer-fix.jpg" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop  >
+      <source src="midia/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+      <source src="midia/2009-lovers-carvings-bibio.ogg" type="audio/ogg"> 
+      <source src="midia/2009-lovers-carvings-bibio.wav" type="audio/wav">
+      <p>infelizmente o seu navegador nao consegue reproduzir audio. <a href="midia/2009-lovers-carvings-bibio.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--MP3,WAV.OGG. estes formatos permitem o audio ter compatiblidade com todo o tipo de navegador-->
+</body>
+</html>
